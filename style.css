@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.6fr 1.4fr 0.8fr;
+    color: white;
+    gap: 10px;
+    border: 10px solid white;
+    grid-template-areas: " header  header  header header header"
+                          "sidebar content1 content1 content1 content1"
+                          "sidebar content2 content2 content3 content3"
+                          "sidebar footer footer footer footer";
+
+
+}
+
+.item{
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    font-size: larger;
+}
+
+.one{
+    grid-area: header;
+
+}
+
+.two{
+    grid-area: sidebar;
+}
+
+.three{
+    grid-area: content1;
+
+}
+
+.four{
+    grid-area: content2;
+}
+
+.five{
+    grid-area: content3;
+}
+
+.six{
+    grid-area: footer;
+}
